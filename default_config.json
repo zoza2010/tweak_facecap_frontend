@@ -1,0 +1,314 @@
+{
+    "browDown_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "browDown_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "browInnerUp": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "browOuterUp_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "browOuterUp_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "cheekPuff": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "cheekSquint_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "cheekSquint_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeBlink_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeBlink_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookDown_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookDown_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookIn_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookIn_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookOut_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookOut_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookUp_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeLookUp_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeSquint_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeSquint_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeWide_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "eyeWide_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "jawForward": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "jawLeft": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "jawOpen": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "jawRight": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthClose": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthDimple_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthDimple_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthFrown_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthFrown_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthFunnel": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthLeft": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthLowerDown_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthLowerDown_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthPress_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthPress_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthPucker": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthRight": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthRollLower": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthRollUpper": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthShrugLower": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthShrugUpper": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthSmile_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthSmile_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthStretch_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthStretch_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthUpperUp_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "mouthUpperUp_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "noseSneer_L": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "noseSneer_R": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    },
+    "tongueOut": {
+        "Clamp Max": 100,
+        "Clamp Min": 0,
+        "Offset": 0,
+        "Scale Factor": 1
+    }
+}
