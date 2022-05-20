@@ -297,8 +297,8 @@ QComboBox::drop-down
     width: 15px;
     border-left-width: 0px;
     border-left-color: darkgray;
-    border-left-style: solid; 
-    border-top-right-radius: 3px; 
+    border-left-style: solid;
+    border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 
 }
@@ -313,7 +313,7 @@ QComboBox::down-arrow
 
 
 /*-----QSpinBox & QDoubleSpinBox & QDateTimeEdit-----*/
-QSpinBox, 
+QSpinBox,
 QDoubleSpinBox,
 QDateTimeEdit
 {
@@ -326,7 +326,7 @@ QDateTimeEdit
 }
 
 
-QSpinBox::disabled, 
+QSpinBox::disabled,
 QDoubleSpinBox::disabled,
 QDateTimeEdit::disabled
 {
@@ -337,7 +337,7 @@ QDateTimeEdit::disabled
 }
 
 
-QSpinBox:hover, 
+QSpinBox:hover,
 QDoubleSpinBox::hover,
 QDateTimeEdit::hover
 {
@@ -359,7 +359,7 @@ QDateTimeEdit::up-button, QDateTimeEdit::down-button
 }
 
 
-QSpinBox::disabled, 
+QSpinBox::disabled,
 QDoubleSpinBox::disabled,
 QDateTimeEdit::disabled
 {
@@ -466,7 +466,7 @@ QTextEdit::disabled
 
 
 /*-----QGroupBox-----*/
-QGroupBox 
+QGroupBox
 {
     border: 1px solid;
     border-color: #607cff;
@@ -475,7 +475,7 @@ QGroupBox
 }
 
 
-QGroupBox::title  
+QGroupBox::title
 {
     background-color: #607cff;
     color: #ffffff;
@@ -546,34 +546,34 @@ QCheckBox::indicator:disabled
 
 /*-----QRadioButton-----*/
 QRadioButton::indicator::unchecked
-{ 
-	border: 2px inset gray; 
-	border-radius: 5px; 
+{
+	border: 2px inset gray;
+	border-radius: 5px;
 	background-color:  #fff;
-	width: 9px; 
-	height: 9px; 
+	width: 9px;
+	height: 9px;
 
 }
 
 
 QRadioButton::indicator::unchecked:hover
-{ 
-	border: 2px solid #607cff; 
-	border-radius: 5px; 
+{
+	border: 2px solid #607cff;
+	border-radius: 5px;
 	background-color:  #fff;
-	width: 9px; 
-	height: 9px; 
+	width: 9px;
+	height: 9px;
 
 }
 
 
 QRadioButton::indicator::checked
-{ 
-	border: 2px inset darkgray; 
-	border-radius: 5px; 
-	background-color: #4969ff; 
-	width: 9px; 
-	height: 9px; 
+{
+	border: 2px inset darkgray;
+	border-radius: 5px;
+	background-color: #4969ff;
+	width: 9px;
+	height: 9px;
 
 }
 
@@ -617,7 +617,7 @@ QTableView::disabled
 }
 
 
-QTableView::item:hover 
+QTableView::item:hover
 {
     background-color: #26264f;
     color: #f0f0f0;
@@ -625,7 +625,7 @@ QTableView::item:hover
 }
 
 
-QTableView::item:selected 
+QTableView::item:selected
 {
     background-color: #1a1b1c;
     border: 2px solid #4969ff;
@@ -657,7 +657,7 @@ QHeaderView::section
     color: #fff;
     text-align: left;
 	padding: 4px;
-	
+
 }
 
 
@@ -738,7 +738,7 @@ QTabBar::tab:disabled
 }
 
 
-QTabWidget::pane 
+QTabWidget::pane
 {
 	background-color: #262626;
 	color: #ffffff;
@@ -770,35 +770,35 @@ QTabBar::tab:selected:disabled
 }
 
 
-QTabBar::tab:!selected 
+QTabBar::tab:!selected
 {
     background-color: #262626;
 
 }
 
 
-QTabBar::tab:!selected:hover 
+QTabBar::tab:!selected:hover
 {
     background-color: #8399ff;
 
 }
 
 
-QTabBar::tab:top:!selected 
+QTabBar::tab:top:!selected
 {
     margin-top: 3px;
 
 }
 
 
-QTabBar::tab:bottom:!selected 
+QTabBar::tab:bottom:!selected
 {
     margin-bottom: 3px;
 
 }
 
 
-QTabBar::tab:top, QTabBar::tab:bottom 
+QTabBar::tab:top, QTabBar::tab:bottom
 {
     min-width: 8ex;
     margin-right: -1px;
@@ -807,14 +807,14 @@ QTabBar::tab:top, QTabBar::tab:bottom
 }
 
 
-QTabBar::tab:top:selected 
+QTabBar::tab:top:selected
 {
     border-bottom-color: none;
 
 }
 
 
-QTabBar::tab:bottom:selected 
+QTabBar::tab:bottom:selected
 {
     border-top-color: none;
 
@@ -822,14 +822,14 @@ QTabBar::tab:bottom:selected
 
 
 QTabBar::tab:top:last, QTabBar::tab:bottom:last,
-QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one 
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one
 {
     margin-right: 0;
 
 }
 
 
-QTabBar::tab:left:!selected 
+QTabBar::tab:left:!selected
 {
     margin-right: 3px;
 
@@ -843,7 +843,7 @@ QTabBar::tab:right:!selected
 }
 
 
-QTabBar::tab:left, QTabBar::tab:right 
+QTabBar::tab:left, QTabBar::tab:right
 {
     min-height: 8ex;
     margin-bottom: -1px;
@@ -852,14 +852,14 @@ QTabBar::tab:left, QTabBar::tab:right
 }
 
 
-QTabBar::tab:left:selected 
+QTabBar::tab:left:selected
 {
     border-left-color: none;
 
 }
 
 
-QTabBar::tab:right:selected 
+QTabBar::tab:right:selected
 {
     border-right-color: none;
 
@@ -867,7 +867,7 @@ QTabBar::tab:right:selected
 
 
 QTabBar::tab:left:last, QTabBar::tab:right:last,
-QTabBar::tab:left:only-one, QTabBar::tab:right:only-one 
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one
 {
     margin-bottom: 0;
 
@@ -875,7 +875,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one
 
 
 /*-----QSlider-----*/
-QSlider::groove:horizontal 
+QSlider::groove:horizontal
 {
 	background-color: transparent;
 	height: 5px;
@@ -883,21 +883,21 @@ QSlider::groove:horizontal
 }
 
 
-QSlider::sub-page:horizontal 
+QSlider::sub-page:horizontal
 {
 	background-color: #607cff;
 
 }
 
 
-QSlider::add-page:horizontal 
+QSlider::add-page:horizontal
 {
 	background-color: #666765;
 
 }
 
 
-QSlider::handle:horizontal 
+QSlider::handle:horizontal
 {
 	background-color: #607cff;
 	width: 14px;
@@ -908,7 +908,7 @@ QSlider::handle:horizontal
 }
 
 
-QSlider::handle:horizontal:hover 
+QSlider::handle:horizontal:hover
 {
 	background-color: #607cff;
 	border-radius: 3px;
@@ -916,7 +916,7 @@ QSlider::handle:horizontal:hover
 }
 
 
-QSlider::sub-page:horizontal:disabled 
+QSlider::sub-page:horizontal:disabled
 {
 	background-color: #bbb;
 	border-color: #999;
@@ -924,7 +924,7 @@ QSlider::sub-page:horizontal:disabled
 }
 
 
-QSlider::add-page:horizontal:disabled 
+QSlider::add-page:horizontal:disabled
 {
 	background-color: #eee;
 	border-color: #999;
@@ -932,7 +932,7 @@ QSlider::add-page:horizontal:disabled
 }
 
 
-QSlider::handle:horizontal:disabled 
+QSlider::handle:horizontal:disabled
 {
 	background-color: #eee;
 	border: 1px solid #aaa;
@@ -941,7 +941,7 @@ QSlider::handle:horizontal:disabled
 }
 
 
-QSlider::groove:vertical 
+QSlider::groove:vertical
 {
 	background-color: transparent;
 	width: 5px;
@@ -949,21 +949,21 @@ QSlider::groove:vertical
 }
 
 
-QSlider::sub-page:vertical 
+QSlider::sub-page:vertical
 {
 	background-color: #607cff;
 
 }
 
 
-QSlider::add-page:vertical 
+QSlider::add-page:vertical
 {
 	background-color: #666765;
 
 }
 
 
-QSlider::handle:vertical 
+QSlider::handle:vertical
 {
 	background-color: #607cff;
 	height: 14px;
@@ -974,7 +974,7 @@ QSlider::handle:vertical
 }
 
 
-QSlider::handle:vertical:hover 
+QSlider::handle:vertical:hover
 {
 	background-color: #607cff;
 	border-radius: 3px;
@@ -982,7 +982,7 @@ QSlider::handle:vertical:hover
 }
 
 
-QSlider::sub-page:vertical:disabled 
+QSlider::sub-page:vertical:disabled
 {
 	background-color: #bbb;
 	border-color: #999;
@@ -990,7 +990,7 @@ QSlider::sub-page:vertical:disabled
 }
 
 
-QSlider::add-page:vertical:disabled 
+QSlider::add-page:vertical:disabled
 {
 	background-color: #eee;
 	border-color: #999;
@@ -998,7 +998,7 @@ QSlider::add-page:vertical:disabled
 }
 
 
-QSlider::handle:vertical:disabled 
+QSlider::handle:vertical:disabled
 {
 	background-color: #eee;
 	border: 1px solid #aaa;
@@ -1187,5 +1187,3 @@ QStatusBar
 	border-color: #051a39;
 
 }
-
-
