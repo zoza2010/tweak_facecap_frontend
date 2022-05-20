@@ -1,7 +1,7 @@
 from pythonosc import udp_client
 
 class OSCCLient(object):
-    def __init__(self, ip='127.0.0.1', port=8000):
+    def __init__(self, ip='127.0.0.1', port=9001):
         self.setup_client(ip, port)
 
     def setup_client(self, ip, port):
@@ -11,4 +11,4 @@ class OSCCLient(object):
         self.setup_client(ip, port)
 
     def send_message(self, index, value):
-        self._client.send_message("/E", (index, value))
+        self._client.send_message("/E", (int(index), float(value)*0.01))

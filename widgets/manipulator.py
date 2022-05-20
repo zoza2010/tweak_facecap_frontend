@@ -21,6 +21,7 @@ class Manipulator(QtWidgets.QWidget):
         self.manipulators_layout = QtWidgets.QHBoxLayout()
         self.search_layout = QtWidgets.QHBoxLayout()
 
+
         self.search_line_edit = QtWidgets.QLineEdit()
         self.search_label = QtWidgets.QLabel()
         self.search_label.setText("search (text or regexp): ")
@@ -29,6 +30,8 @@ class Manipulator(QtWidgets.QWidget):
         self.item_name_label = QtWidgets.QLabel(
             self.current_item or "item is not selected"
         )
+        self.search_layout.addWidget(self.search_label)
+        self.search_layout.addWidget(self.search_line_edit)
 
         self.list_view = ControlsDataView()
         # add model

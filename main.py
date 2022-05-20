@@ -9,8 +9,8 @@ from osc_client import OSCCLient
 
 class FacecapTweakMainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
-        super(FacecapTweakMainWindow, self).__init__(parent)
-        self._default_config = self.read_config("./default_config_with_index.json")
+        super(FacecapTweakMainWindow, self).__init__(parent, QtCore.Qt.WindowStaysOnTopHint)
+        self._default_config = self.read_config("default_config.json")
         self.osc_client = OSCCLient()
         self.main_layout = QtWidgets.QHBoxLayout()
         self.facecap_tweak_widget = FacecapTweak(self.osc_client, parent=self)
@@ -31,10 +31,10 @@ class FacecapTweakMainWindow(QtWidgets.QMainWindow):
 
     def send_all_osc(self):
         for i in self.facecap_tweak_widget.get_config_data().values():
-            self.osc_client.send_message(((i['index']-1)*4 +1), i["Clamp Max"])
-            self.osc_client.send_message(((i['index'] - 1) * 4 + 1) + 1, i["Clamp Min"])
-            self.osc_client.send_message(((i['index'] - 1) * 4 + 1) + 2, i["Offset"])
-            self.osc_client.send_message(((i['index'] - 1) * 4 + 1) + 3, i["Scale Factor"])
+            self.osc_client.send_message(((i['index'] - 1) * 4) + 2, i["Clamp Max"])
+            self.osc_client.send_message(((i['index'] - 1) * 4) + 1, i["Clamp Min"])
+            self.osc_client.send_message(((i['index'] - 1) * 4) + 3, i["Offset"])
+            self.osc_client.send_message(((i['index'] - 1) * 4) + 4, i["Scale Factor"] * 0.01)
 
 
 
@@ -140,5 +140,6 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     app.setStyleSheet(open(r".\resources\Darkeum.qss").read())
     wgt = FacecapTweakMainWindow()
+    # wgt = FacecapTweak([])
     wgt.show()
     app.exec()

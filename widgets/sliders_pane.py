@@ -66,19 +66,19 @@ class SlidersPane(QtWidgets.QWidget):
         self.ui.clampMaxLineEdit.setText(str(self.ui.clampMaxSlider.value()))
         self.set_data_block_values("Clamp Max", self.ui.clampMaxSlider.value())
         if self.config_data_block:
-            self.osc_client.send_message(((self.config_data_block['index']-1)*4 +1), self.ui.clampMaxSlider.value())
+            self.osc_client.send_message(((self.config_data_block['index'] - 1 )* 4) + 2, self.ui.clampMaxSlider.value())
 
     def onClampMinSliderValueChanged(self):
         self.ui.clampMinLineEdit.setText(str(self.ui.clampMinSlider.value()))
         self.set_data_block_values("Clamp Min", self.ui.clampMinSlider.value())
         if self.config_data_block:
-            self.osc_client.send_message(((self.config_data_block['index']-1)*4 +1) + 1, self.ui.clampMinSlider.value())
+            self.osc_client.send_message(((self.config_data_block['index'] - 1) * 4) + 1, self.ui.clampMinSlider.value())
 
     def onOffsetSliderValueChanged(self):
         self.ui.offsetLineEdit.setText(str(self.ui.offsetSlider.value()))
         self.set_data_block_values("Offset", self.ui.offsetSlider.value())
         if self.config_data_block:
-            self.osc_client.send_message(((self.config_data_block['index']-1)*4 +1) + 2,
+            self.osc_client.send_message(((self.config_data_block['index'] - 1) * 4) + 3,
                                          self.ui.offsetSlider.value())
 
 
@@ -86,7 +86,7 @@ class SlidersPane(QtWidgets.QWidget):
         self.ui.scaleLineEdit.setText(str(self.ui.scaleSlider.value()))
         self.set_data_block_values("Scale Factor", self.ui.scaleSlider.value())
         if self.config_data_block:
-            self.osc_client.send_message(((self.config_data_block['index']-1)*4 +1) + 3,
+            self.osc_client.send_message(((self.config_data_block['index'] - 1) * 4) + 4,
                                          self.ui.scaleSlider.value() * 0.01)
 
     def reset(self):

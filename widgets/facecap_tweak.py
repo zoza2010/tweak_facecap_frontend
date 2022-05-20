@@ -1,5 +1,4 @@
 from PySide6 import QtGui
-from PySide6 import QtCore
 from PySide6 import QtWidgets
 from .picker import Picker
 from .manipulator import Manipulator
@@ -27,8 +26,7 @@ class FacecapTweak(QtWidgets.QWidget):
         self.manipulators_widget.back_button.clicked.connect(self._switch_widgets)
 
         # TODO temp solution
-        self.setFixedWidth(500)
-        self.setFixedHeight(700)
+        self.setFixedSize(self.main_layout.sizeHint())
 
     def set_config_data(self, config_data):
         self.manipulators_widget.set_config_data(config_data)
@@ -53,3 +51,4 @@ class FacecapTweak(QtWidgets.QWidget):
 
     def mouseMoveEvent(self, event: QtGui.QMouseEvent) -> None:
         self.picker.mouseMoveEvent(event)
+
