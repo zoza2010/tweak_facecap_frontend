@@ -3,6 +3,7 @@
 
 from PySide6 import QtGui
 from PySide6 import QtWidgets
+from PySide6 import QtCore
 from .controls_data_model import ControlsDataModel
 from .controls_data_view import ControlsDataView
 from .sliders_pane import SlidersPane
@@ -36,8 +37,14 @@ class Manipulator(QtWidgets.QWidget):
         self.list_view = ControlsDataView()
         # add model
         self.data_model = ControlsDataModel(list(self.config_data.keys()))
+        filter_proxy_model = QtCore.QSortFilterProxyModel()
+        filter_proxy_model.setSourceModel(self.data_model)
+        filter_proxy_model.setFilterCaseSensitivity(QtCore.Qt.CaseInsensitive)
+        self.search_line_edit.textChanged.connect(filter_proxy_model.setFilterRegularExpression)\
+
+
         # set model to view
-        self.list_view.setModel(self.data_model)
+        self.list_view.setModel(filter_proxy_model)
 
         self.back_button = QtWidgets.QPushButton()
         self.back_button.setText("go back")
