@@ -139,7 +139,7 @@ class FacecapTweakMainWindow(QtWidgets.QMainWindow):
         self.write_config(file_name)
 
     def read_config(self, path):
-        logger.error(f'reading config from: "{path}"')
+        logger.debug(f'reading config from: "{path}"')
         with open(path, "r") as f:
             config_object = json.load(f)
             data = []
