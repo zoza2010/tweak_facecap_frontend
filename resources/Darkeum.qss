@@ -501,6 +501,7 @@ QGroupBox::title::disabled
 }
 
 
+
 /*-----QCheckBox-----*/
 QCheckBox::indicator
 {
@@ -510,13 +511,20 @@ QCheckBox::indicator
     width: 12px;
     height: 12px;
 
+
+
 }
+
 
 
 QCheckBox::indicator:checked
 {
     image:url(://checkbox.png);
-    border: 1px solid #607cff;
+    color: #32CD32;
+    background-color: #32CD32;
+    border: 1px solid #32CD32;
+
+
 
 }
 
@@ -524,6 +532,17 @@ QCheckBox::indicator:checked
 QCheckBox::indicator:unchecked:hover
 {
     border: 1px solid #607cff;
+    background-color: #FF0000;
+
+}
+
+
+QCheckBox::indicator:unchecked
+
+
+{
+    border: 1px solid #607cff;
+    background-color: #FF0000;
 
 }
 
