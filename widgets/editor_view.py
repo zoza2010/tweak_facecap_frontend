@@ -62,7 +62,8 @@ class EditorView(QtWidgets.QWidget, Ui_Form):
         elif len(selected_indexes) > 1:
             raise Exception("unhandled behaviour, more than one index was selected")
 
-        self._mapper.setCurrentIndex(selected_indexes[0].row())
+        self._mapper.setCurrentIndex(self._filter_proxy_model.mapToSource(selected_indexes[0]).row())
+
 
     def _attach_mappings(self):
         # self._line_edits_mapper.clearMapping()
