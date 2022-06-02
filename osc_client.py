@@ -13,11 +13,8 @@ class OSCDataMapper(object):
     def __init__(self, parent):
         self.parent = parent
 
-    def setParent(self, parent):
-        self.parent = parent
-
     def _converter(self, top_left: QtCore.QModelIndex, bottom_right, roles):
-
+        # this builds osc message from model data
         if (1 <= top_left.column() < self.parent.model.columnCount() - 1
         ):
             anim_channel_id_relative = top_left.column() - 1
@@ -71,10 +68,10 @@ class OSCClient(object):
         self.model.all_data_changed.connect(self._on_all_data_changed)
 
     def setMapper(self, mapper):
-        mapper.setParent(self)
+        mapper.parent = self
         self._mapper = mapper
 
-    def _send_message(self, *args):
+    def send_message(self, *args):
         if not self.paused:
             logger.debug(f"streaming: {args}")
             self._client.send_message(*args)
@@ -87,15 +84,12 @@ class OSCClient(object):
 
         for i in range(self.model.rowCount()):
             for j in range(self.model.columnCount()):
-
                 index = self.model.index(i, j)
-                command = self._mapper.map_to_commad(index, index, [])
-                if command:
-                    self._send_message(*command)
+                self._on_item_changed(index, index, [])
 
     def _on_item_changed(
         self, top_left: QtCore.QModelIndex, bottom_right: QtCore.QModelIndex, roles
     ):
         command = self._mapper.map_to_commad(top_left, bottom_right, roles)
         if command:
-            self._send_message(*command)
+            self.send_message(*command)
