@@ -57,6 +57,32 @@ class Ui_Form(object):
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setSpacing(4)
         self.verticalLayout.setObjectName(u"verticalLayout")
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.clampMinLineEdit = QLineEdit(Form)
+        self.clampMinLineEdit.setObjectName(u"clampMinLineEdit")
+
+        self.verticalLayout_2.addWidget(self.clampMinLineEdit)
+
+        self.clampMinSlider = QSlider(Form)
+        self.clampMinSlider.setObjectName(u"clampMinSlider")
+        self.clampMinSlider.setOrientation(Qt.Vertical)
+
+        self.verticalLayout_2.addWidget(self.clampMinSlider, 0, Qt.AlignHCenter)
+
+        self.clampMinLabel = QLabel(Form)
+        self.clampMinLabel.setObjectName(u"clampMinLabel")
+        self.clampMinLabel.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_2.addWidget(self.clampMinLabel)
+
+
+        self.horizontalLayout.addLayout(self.verticalLayout_2)
+
+
+
+
         self.clampMaxLineEdit = QLineEdit(Form)
         self.clampMaxLineEdit.setObjectName(u"clampMaxLineEdit")
 
@@ -85,28 +111,6 @@ class Ui_Form(object):
 
 
         self.horizontalLayout.addLayout(self.verticalLayout)
-
-        self.verticalLayout_2 = QVBoxLayout()
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.clampMinLineEdit = QLineEdit(Form)
-        self.clampMinLineEdit.setObjectName(u"clampMinLineEdit")
-
-        self.verticalLayout_2.addWidget(self.clampMinLineEdit)
-
-        self.clampMinSlider = QSlider(Form)
-        self.clampMinSlider.setObjectName(u"clampMinSlider")
-        self.clampMinSlider.setOrientation(Qt.Vertical)
-
-        self.verticalLayout_2.addWidget(self.clampMinSlider, 0, Qt.AlignHCenter)
-
-        self.clampMinLabel = QLabel(Form)
-        self.clampMinLabel.setObjectName(u"clampMinLabel")
-        self.clampMinLabel.setAlignment(Qt.AlignCenter)
-
-        self.verticalLayout_2.addWidget(self.clampMinLabel)
-
-
-        self.horizontalLayout.addLayout(self.verticalLayout_2)
 
         self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")

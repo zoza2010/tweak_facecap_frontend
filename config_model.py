@@ -24,8 +24,8 @@ class ConfigModel(QtCore.QAbstractTableModel):
             if orientation == QtCore.Qt.Horizontal:
                 return [
                     "blendshape name",
-                    "clamp max",
                     "clamp min",
+                    "clamp max",
                     "offset",
                     "scale",
                     "index",

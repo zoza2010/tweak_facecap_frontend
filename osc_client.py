@@ -15,13 +15,12 @@ class OSCDataMapper(object):
 
     def _converter(self, top_left: QtCore.QModelIndex, bottom_right, roles):
         # this builds osc message from model data
-        if (1 <= top_left.column() < self.parent.model.columnCount() - 1
-        ):
+        if 1 <= top_left.column() < self.parent.model.columnCount() - 1:
             anim_channel_id_relative = top_left.column() - 1
             blend_shape_id = self.parent.model.configData()[top_left.row()][-1]
             anim_channel_id_absolute = (
-                blend_shape_id - 1
-            ) * 4 + anim_channel_id_relative + 1
+                (blend_shape_id - 1) * 4 + anim_channel_id_relative + 1
+            )
             channel_value = float(top_left.data(QtCore.Qt.DisplayRole))
 
             if top_left.column() == 4:

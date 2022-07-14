@@ -62,20 +62,21 @@ class EditorView(QtWidgets.QWidget, Ui_Form):
         elif len(selected_indexes) > 1:
             raise Exception("unhandled behaviour, more than one index was selected")
 
-        self._mapper.setCurrentIndex(self._filter_proxy_model.mapToSource(selected_indexes[0]).row())
-
+        self._mapper.setCurrentIndex(
+            self._filter_proxy_model.mapToSource(selected_indexes[0]).row()
+        )
 
     def _attach_mappings(self):
         # self._line_edits_mapper.clearMapping()
         self._mapper.clearMapping()
 
-        self._mapper.addMapping(self.clampMinSlider, self._mapper_start_column + 1)
-        self._mapper.addMapping(self.clampMaxSlider, self._mapper_start_column)
+        self._mapper.addMapping(self.clampMinSlider, self._mapper_start_column)
+        self._mapper.addMapping(self.clampMaxSlider, self._mapper_start_column + 1)
         self._mapper.addMapping(self.offsetSlider, self._mapper_start_column + 2)
         self._mapper.addMapping(self.scaleSlider, self._mapper_start_column + 3)
         # # map line edits
-        self._mapper.addMapping(self.clampMaxLineEdit, self._mapper_start_column)
-        self._mapper.addMapping(self.clampMinLineEdit, self._mapper_start_column + 1)
+        self._mapper.addMapping(self.clampMaxLineEdit, self._mapper_start_column + 1)
+        self._mapper.addMapping(self.clampMinLineEdit, self._mapper_start_column)
         self._mapper.addMapping(self.offsetLineEdit, self._mapper_start_column + 2)
         self._mapper.addMapping(self.scaleLineEdit, self._mapper_start_column + 3)
 

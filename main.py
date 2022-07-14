@@ -23,10 +23,12 @@ class FacecapTweakMainWindow(QtWidgets.QMainWindow):
         super(FacecapTweakMainWindow, self).__init__(
             parent, QtCore.Qt.WindowStaysOnTopHint
         )
+
         self.main_layout = QtWidgets.QVBoxLayout(self)
+
         self.main_widget = QtWidgets.QWidget(self)
         self._default_config = self.read_config(
-            os.path.join(os.environ["FACECAP_TWEAK_ROOT"], "default_config.json")
+            os.path.join(os.environ["FACECAP_TWEAK_ROOT"], "" "" "default_config.json")
         )
         self.osc_client = OSCClient()
         self.stream_pane = StreamPane(self)
@@ -104,7 +106,7 @@ class FacecapTweakMainWindow(QtWidgets.QMainWindow):
             self,
             "QFileDialog.getOpenFileName()",
             "",
-            "All Files (*);;Python Files (*.py)",
+            "Json Files (*.json)",
             options=options,
         )
         if fileName:
@@ -144,8 +146,17 @@ class FacecapTweakMainWindow(QtWidgets.QMainWindow):
             config_object = json.load(f)
             data = []
             for key, values in config_object.items():
-                attr_values = list(values.values())
-                attr_values.insert(0, key)
+                attr_values = [
+                    key,
+                    values["Clamp Min"],
+                    values["Clamp Max"],
+                    values["Offset"],
+                    values["Scale Factor"],
+                    values["index"],
+                ]
+
+                # attr_values = list(values.values())
+                # attr_values.insert(0, key)
                 data.append(attr_values)
             return data
 
@@ -160,7 +171,7 @@ class FacecapTweakMainWindow(QtWidgets.QMainWindow):
                 "Clamp Min": i[2],
                 "Offset": i[3],
                 "Scale Factor": i[4],
-                "index": [5],
+                "index": i[5],
             }
         with open(path, "w") as f:
             f.write(json.dumps(to_save, indent=4))
