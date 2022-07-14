@@ -21,13 +21,13 @@ class OSCDataMapper(object):
             blend_shape_id = self.parent.model.configData()[top_left.row()][-1]
             anim_channel_id_absolute = (
                 blend_shape_id - 1
-            ) * 4 + anim_channel_id_relative
+            ) * 4 + anim_channel_id_relative + 1
             channel_value = float(top_left.data(QtCore.Qt.DisplayRole))
 
             if top_left.column() == 4:
                 channel_value *= 0.01
 
-            return "/E", (anim_channel_id_absolute, channel_value)
+            return "/E", (anim_channel_id_absolute, channel_value * 0.01)
 
     def map_to_commad(self, top_left: QtCore.QModelIndex, bottom_right, roles) -> any:
         return self._converter(top_left, bottom_right, roles)
