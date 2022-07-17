@@ -6,14 +6,38 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>294</height>
+    <width>424</width>
+    <height>598</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="filterLabel">
+       <property name="text">
+        <string>filter: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="filterLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QListView" name="listView"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="currentItemlabel">
+     <property name="text">
+      <string>current item</string>
+     </property>
+    </widget>
+   </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <property name="sizeConstraint">
@@ -137,6 +161,13 @@
       </layout>
      </item>
     </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="goBackPushButton">
+     <property name="text">
+      <string>go back</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

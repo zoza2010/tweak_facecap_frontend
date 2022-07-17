@@ -1,6 +1,7 @@
 from PySide6 import QtGui
 from PySide6 import QtCore
 from PySide6 import QtWidgets
+import os
 
 
 class Picker(QtWidgets.QLabel):
@@ -11,11 +12,21 @@ class Picker(QtWidgets.QLabel):
 
     def __init__(self, parent=None):
         super(Picker, self).__init__(parent)
-        self.default_pixmap = QtGui.QPixmap("./images/woman_face_beauty.png")
-        self.highlight_top = QtGui.QPixmap("./images/highlight_top.png")
-        self.highlight_mid = QtGui.QPixmap("./images/highlight_mid.png")
-        self.highlight_bottom = QtGui.QPixmap("./images/highlight_bottom.png")
-        self.matte_pixmap = QtGui.QImage("./images/puzzle_matte.png")
+        self.default_pixmap = QtGui.QPixmap(
+            os.path.join(os.environ["FACECAP_TWEAK_RESOURCES"], "woman_face_beauty.png")
+        )
+        self.highlight_top = QtGui.QPixmap(
+            os.path.join(os.environ["FACECAP_TWEAK_RESOURCES"], "highlight_top.png")
+        )
+        self.highlight_mid = QtGui.QPixmap(
+            os.path.join(os.environ["FACECAP_TWEAK_RESOURCES"], "highlight_mid.png")
+        )
+        self.highlight_bottom = QtGui.QPixmap(
+            os.path.join(os.environ["FACECAP_TWEAK_RESOURCES"], "highlight_bottom.png")
+        )
+        self.matte_pixmap = QtGui.QImage(
+            os.path.join(os.environ["FACECAP_TWEAK_RESOURCES"], "puzzle_matte.png")
+        )
         self.setPixmap(self.default_pixmap)
         self.setMouseTracking(True)
 
