@@ -39,9 +39,17 @@ jobs:
           # git checkout main
 
       - name: Python Semantic Release
+        id: create_release
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish package to GitHub Release
+        uses: python-semantic-release/upload-to-gh-release@main
+        if: ${{ steps.release.outputs.released }} == 'true'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.release.outputs.tag }}
 
 #      - name: Upload artfacts
 #        uses: actions/upload-artifact@v2.2.0
