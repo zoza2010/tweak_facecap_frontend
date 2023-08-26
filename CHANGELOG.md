@@ -2,6 +2,17 @@
 
 
 
+## v0.2.0 (2023-08-26)
+
+### Feature
+
+* feat: Update main.yml ([`5cb48ec`](https://github.com/zoza2010/tweak_facecap_frontend/commit/5cb48ecf31c434a7b3e550464210ae496d383632))
+
+### Unknown
+
+* Update main.yml ([`d046cb7`](https://github.com/zoza2010/tweak_facecap_frontend/commit/d046cb739aff6657d0a463c3206b2e6d1efe860b))
+
+
 ## v0.1.1 (2023-08-26)
 
 ### Performance
