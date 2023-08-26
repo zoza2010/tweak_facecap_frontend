@@ -23,17 +23,28 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v1
     
-      - name: Setup enviroment
-        run:
-          sudo add-apt-repository ppa:deadsnakes/ppa &&
-          sudo apt update &&
-          sudo apt install python3.9 -y &&
-          sudo apt install python3.9-distutils -y &&
-          python3.9 -m pip install -r ./requirements.txt &&
-          python3.9 --version
+      # - name: Setup enviroment
+      #   run:
+      #     sudo add-apt-repository ppa:deadsnakes/ppa &&
+      #     sudo apt update &&
+      #     sudo apt install python3.9 -y &&
+      #     sudo apt install python3.9-distutils -y &&
+      #     python3.9 -m pip install -r ./requirements.txt &&
+      #     python3.9 --version
+      - name: Setup Python
+        uses: actions/setup-python@v4.7.0
+        with:
+          # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
+          python-version: 3.9
+          # The target architecture (x86, x64) of the Python or PyPy interpreter.
+          architecture: x64
+            
 
       - name: Build .pyc files
-        run: tar czf hdr_library_py39.tar.gz ./widgets
+        run: 
+          tar czf hdr_library_py39.tar.gz ./widgets &&
+          python3 --version
+            
 
       - name: Upload artfacts
         uses: actions/upload-artifact@v2.2.0
