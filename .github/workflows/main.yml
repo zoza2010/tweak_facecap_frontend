@@ -19,7 +19,12 @@ jobs:
           sudo apt-get update &&
           sudo apt install libssl-dev openssl wget build-essential zlib1g-dev -y &&
           wget https://www.python.org/ftp/python/3.8.13/Python-3.8.13.tgz &&
-          tar -xvf Python-3.8.13.tgz
+          tar -xvf Python-3.8.13.tgz &&
+          cd Python-3.8.13 &&
+          ./configure --enable-optimizations &&
+          make &&
+          sudo make install
+          
           
           # sudo apt-get install -y python3-pyqt5
 
