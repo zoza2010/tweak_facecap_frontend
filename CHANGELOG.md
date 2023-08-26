@@ -2,6 +2,21 @@
 
 
 
+## v0.1.1 (2023-08-26)
+
+### Performance
+
+* perf: moved to subfolder ([`0c58ed3`](https://github.com/zoza2010/tweak_facecap_frontend/commit/0c58ed327cfffbfb1232514f707610eda303e68b))
+
+### Refactor
+
+* refactor: moved to subfolder ([`4968bea`](https://github.com/zoza2010/tweak_facecap_frontend/commit/4968bea13896c6669185132333f0b6615f1d73f1))
+
+### Unknown
+
+* Merge remote-tracking branch &#39;origin/main&#39; ([`65a9a13`](https://github.com/zoza2010/tweak_facecap_frontend/commit/65a9a13a0f3fbe339330933cc2c0fc98416687c9))
+
+
 ## v0.1.0 (2023-08-26)
 
 ### Build
