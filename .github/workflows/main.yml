@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Clone repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
     
       - name: Setup Python
         uses: actions/setup-python@v4.7.0
@@ -31,7 +31,8 @@ jobs:
             
 
       - name: Build .pyc files
-        run: 
+        run:
+          git checkout main
           #tar czf hdr_library_py39.tar.gz ./tweak_facecap_frontend/widgets &&
           python3 --version
 
