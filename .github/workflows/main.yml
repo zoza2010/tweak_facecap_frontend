@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  build_py37:
+  build_py39:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,14 +23,22 @@ jobs:
           sudo apt update &&
           sudo apt install python3.9 -y &&
           sudo apt install python3.9-distutils -y &&
-          echo $PWD &&
-          ls -la . &&
           python3.9 -m pip install -r ./requirements.txt &&
           python3.9 --version
-          
-          
 
       - name: Compile .pyc files
         run: echo "python3 --version"
+
+      - name: Release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: ${{ steps.version.outputs.version }}
+          tag_name: ${{ github.ref }}
+          body_path: CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         
 
