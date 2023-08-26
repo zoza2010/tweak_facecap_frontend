@@ -2,6 +2,13 @@
 
 
 
+## v0.5.1 (2023-08-26)
+
+### Performance
+
+* perf: updated config ([`cb03d91`](https://github.com/zoza2010/tweak_facecap_frontend/commit/cb03d91655d3d6c5d7ca73e0898fb44d6b292048))
+
+
 ## v0.5.0 (2023-08-26)
 
 ### Feature
