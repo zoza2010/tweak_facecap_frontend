@@ -16,8 +16,8 @@ jobs:
     steps:
       - name: Setup enviroment
         run: 
-          sudo apt-get update -y
-          sudo apt-get install -y python3-pyqt5 
+          sudo apt-get update && 
+          sudo apt-get install -y python3-pyqt5
 
       - name: Compile .pyc files
         run: echo "python3 --version"
