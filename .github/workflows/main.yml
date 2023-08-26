@@ -12,7 +12,6 @@ on:
 jobs:
   build_py39:
     runs-on: ubuntu-latest
-    concurrency: release
     permissions:
       id-token: write
       contents: write
