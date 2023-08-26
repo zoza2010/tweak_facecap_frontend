@@ -34,8 +34,8 @@ jobs:
       - name: Build .pyc files
         run:
           mkdir dist &&
-          touch dist/test.txt &&
-          echo "test" >> dist/test.txt &&
+          touch dist/test.py &&
+          echo "test" >> dist/test.py &&
           ls -la .
           # git checkout main
 
