@@ -35,7 +35,8 @@ jobs:
         run:
           mkdir dist &&
           touch dist/test.txt &&
-          echo "test" >> dist/test.txt
+          echo "test" >> dist/test.txt &&
+          ls -la .
           # git checkout main
 
       - name: Python Semantic Release
