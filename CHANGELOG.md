@@ -2,6 +2,13 @@
 
 
 
+## v0.10.0 (2023-08-26)
+
+### Feature
+
+* feat: added some unused comment ([`1b69fa5`](https://github.com/zoza2010/tweak_facecap_frontend/commit/1b69fa5b80759154077b52a1ade37d2c7710c45d))
+
+
 ## v0.9.0 (2023-08-26)
 
 ### Feature
