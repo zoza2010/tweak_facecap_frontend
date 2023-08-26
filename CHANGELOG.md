@@ -2,6 +2,17 @@
 
 
 
+## v0.7.0 (2023-08-26)
+
+### Feature
+
+* feat: updated config ([`cd947f6`](https://github.com/zoza2010/tweak_facecap_frontend/commit/cd947f62c7637b4d035cf1d62f7defb0c1f76cae))
+
+### Unknown
+
+* Merge remote-tracking branch &#39;origin/main&#39; ([`9ff1bb4`](https://github.com/zoza2010/tweak_facecap_frontend/commit/9ff1bb442d8dbe10e8b86b4603328dd50d3a5d6d))
+
+
 ## v0.6.0 (2023-08-26)
 
 ### Build
