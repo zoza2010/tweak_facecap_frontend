@@ -32,7 +32,7 @@ jobs:
 
       - name: Build .pyc files
         run:
-          git checkout main
+          #git checkout main
           #tar czf hdr_library_py39.tar.gz ./tweak_facecap_frontend/widgets &&
           python3 --version
 
