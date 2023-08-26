@@ -34,11 +34,9 @@ jobs:
       - name: Build .pyc files
         run:
           
-          mkdir dist
+          mkdir ./dist
           touch ./dist/test.txt
           # git checkout main
-          # echo "test"
-          #git checkout main
 
       - name: Python Semantic Release
         uses: python-semantic-release/python-semantic-release@master
