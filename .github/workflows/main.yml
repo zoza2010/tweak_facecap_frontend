@@ -19,6 +19,7 @@ jobs:
           sudo add-apt-repository ppa:deadsnakes/ppa &&
           sudo apt update &&
           sudo apt install python3.9 -y &&
+          python3.9 -m pip install PySide2 &&
           python3.9 --version
         
         #run:
