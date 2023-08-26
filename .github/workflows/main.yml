@@ -33,8 +33,8 @@ jobs:
 
       - name: Build .pyc files
         run:
-          mkdir dist
-          touch dist/test.txt
+          mkdir dist &&
+          touch dist/test.txt &&
           echo "test" >> dist/test.txt
           # git checkout main
 
