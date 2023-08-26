@@ -35,7 +35,7 @@ jobs:
         uses: actions/setup-python@v4.7.0
         with:
           # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
-          python-version: 3.9
+          python-version: 3.7
           # The target architecture (x86, x64) of the Python or PyPy interpreter.
           architecture: x64
             
