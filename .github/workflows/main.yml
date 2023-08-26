@@ -17,6 +17,7 @@ on:
 jobs:
   build_py39:
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
       - name: Clone repo
