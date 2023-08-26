@@ -12,7 +12,10 @@ on:
 jobs:
   build_py39:
     runs-on: ubuntu-latest
-    permissions: write-all
+    concurrency: release
+    permissions:
+      id-token: write
+      contents: write
 
     steps:
       - name: Clone repo
@@ -29,14 +32,18 @@ jobs:
 
       - name: Build .pyc files
         run: 
-          tar czf hdr_library_py39.tar.gz ./widgets &&
+          tar czf hdr_library_py39.tar.gz ./tweak_facecap_frontend/widgets &&
           python3 --version
-            
 
-      - name: Upload artfacts
-        uses: actions/upload-artifact@v2.2.0
+      - name: Python Semantic Release
+        uses: python-semantic-release/python-semantic-release@master
         with:
-          name: myawesomeartifacts
-          path: ./hdr_library_py39.tar.gz
-          if-no-files-found: error
-          retention-days: 90
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+#      - name: Upload artfacts
+#        uses: actions/upload-artifact@v2.2.0
+#        with:
+#          name: myawesomeartifacts
+#          path: ./hdr_library_py39.tar.gz
+#          if-no-files-found: error
+#          retention-days: 90
