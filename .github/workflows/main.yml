@@ -32,7 +32,8 @@ jobs:
 
       - name: Build .pyc files
         run:
-          echo "test"
+          git checkout main
+          # echo "test"
           #git checkout main
 
       - name: Python Semantic Release
