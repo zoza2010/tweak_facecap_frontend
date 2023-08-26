@@ -3,15 +3,10 @@
 
 name: CI
 
-#on:
-#  push:
-#    branches:
-#      - main
-
 on:
-  push:
-    tags:
-      - '*'
+ push:
+   branches:
+     - main
 
 
 jobs:
@@ -23,14 +18,6 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v1
     
-      # - name: Setup enviroment
-      #   run:
-      #     sudo add-apt-repository ppa:deadsnakes/ppa &&
-      #     sudo apt update &&
-      #     sudo apt install python3.9 -y &&
-      #     sudo apt install python3.9-distutils -y &&
-      #     python3.9 -m pip install -r ./requirements.txt &&
-      #     python3.9 --version
       - name: Setup Python
         uses: actions/setup-python@v4.7.0
         with:
@@ -53,28 +40,3 @@ jobs:
           path: ./hdr_library_py39.tar.gz
           if-no-files-found: error
           retention-days: 90
-
-      
-      # - name: release
-      #   uses: actions/create-release@v1
-      #   id: create_release
-      #   with:
-      #     draft: false
-      #     prerelease: false
-      #     release_name: ${{ steps.version.outputs.version }}
-      #     tag_name: ${{ github.ref }}
-      #     body_path: CHANGELOG.md
-      #   env:
-      #     GITHUB_TOKEN: ${{ github.token }}
-
-      # - name: upload artifact
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ github.token }}
-      #   with:
-      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
-      #     asset_path: ./hdr_library_py39.tar.gz
-      #     asset_name: hdr_library_py39.tar.gz
-      #     asset_content_type: application/gzip
-        
-
