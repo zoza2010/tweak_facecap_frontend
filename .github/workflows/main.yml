@@ -15,10 +15,15 @@ jobs:
 
     steps:
       - name: Setup enviroment
-        run: 
-          sudo apt-get update && 
-          sudo apt-get install -y python3-pyqt5
+        run:
+          sudo apt-get update
+          sudo apt install libssl-dev openssl wget build-essential zlib1g-dev -y
+          wget https://www.python.org/ftp/python/3.8.13/Python-3.8.13.tgz
+          tar -xvf Python-3.8.13.tgz
+          
+          # sudo apt-get install -y python3-pyqt5
 
       - name: Compile .pyc files
         run: echo "python3 --version"
+        
 
