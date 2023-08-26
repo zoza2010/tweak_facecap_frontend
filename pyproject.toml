@@ -52,3 +52,4 @@ env = "GH_TOKEN"
 dist_glob_patterns = ["dist/*"]
 upload_to_vcs_release = true
 build_command = "echo test"
+# test
