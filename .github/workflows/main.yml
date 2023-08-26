@@ -3,10 +3,15 @@
 
 name: CI
 
+#on:
+#  push:
+#    branches:
+#      - main
+
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
 
 
 jobs:
@@ -26,19 +31,17 @@ jobs:
           python3.9 -m pip install -r ./requirements.txt &&
           python3.9 --version
 
-      - name: Compile .pyc files
-        run: echo "python3 --version"
+      - name: Build .pyc files
+        run: tar czf hdr_library_py39.tar.gz ./widgets
 
-      - name: Release
-        uses: actions/create-release@v1
-        id: create_release
-        with:
-          draft: false
-          prerelease: false
-          release_name: ${{ steps.version.outputs.version }}
-          tag_name: ${{ github.ref }}
-          body_path: CHANGELOG.md
+      - name: upload artifact
+        uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./hdr_library_py39.tar.gz
+          asset_name: hdr_library_py39.tar.gz
+          asset_content_type: application/gzip
         
 
