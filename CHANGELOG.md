@@ -1,42 +1,47 @@
 # CHANGELOG
 
 
-## Unreleased
+
+## v0.1.0 (2023-08-26)
+
+### Build
+
+* build: changelog added ([`737d083`](https://github.com/zoza2010/tweak_facecap_frontend/commit/737d0832e05bd5ec7a61eac6687871f3074cb188))
 
 ### Feature
+
+* feat: ci config updated ([`0ce4781`](https://github.com/zoza2010/tweak_facecap_frontend/commit/0ce478150299ff3e5156e7d7a450b3f2c4b4d739))
+
+* feat: ci config updated ([`33b8907`](https://github.com/zoza2010/tweak_facecap_frontend/commit/33b8907b7fd31981d5aad193ef0f0dc694d1ab87))
+
+* feat: ci config updated ([`08775d5`](https://github.com/zoza2010/tweak_facecap_frontend/commit/08775d587f4b56935b3cfab6a09e02ac63e778eb))
+
+* feat: ci config updated ([`e10f34e`](https://github.com/zoza2010/tweak_facecap_frontend/commit/e10f34efc420842c6c05bbde7a9aba918182f099))
+
+* feat: Update main.yml ([`bb69cc6`](https://github.com/zoza2010/tweak_facecap_frontend/commit/bb69cc6e7b932bd70e39016c2f538b73cd1461cf))
+
+* feat: ci config updated ([`a07e50c`](https://github.com/zoza2010/tweak_facecap_frontend/commit/a07e50cde4e173875babe2577363db05a0b2f7a7))
+
+* feat: ci config updated ([`63e2d11`](https://github.com/zoza2010/tweak_facecap_frontend/commit/63e2d1127e0c3bda2482cf0a05732b954176a2dd))
+
+* feat: ci config updated ([`29d0627`](https://github.com/zoza2010/tweak_facecap_frontend/commit/29d0627e28865e0ccb3cdd6c7227f62d1f093c8a))
 
 * feat: added semantic release configs ([`1776913`](https://github.com/zoza2010/tweak_facecap_frontend/commit/17769138acac6d13f3b14b29ce04b5309bd715b5))
 
 ### Unknown
 
+* Merge remote-tracking branch &#39;origin/main&#39;
+
+# Conflicts:
+#	.github/workflows/main.yml ([`63a2317`](https://github.com/zoza2010/tweak_facecap_frontend/commit/63a231737e8ec0693d889cd18ba4a3ab418f176d))
+
 * Update main.yml ([`672c3ac`](https://github.com/zoza2010/tweak_facecap_frontend/commit/672c3acd94d74388521147a68e444260187fb7e1))
-
-
-
-## v0.0.4 (2023-08-26)
-
-### Unknown
 
 * Update main.yml ([`b5cd8d3`](https://github.com/zoza2010/tweak_facecap_frontend/commit/b5cd8d3b7210c517eb8be28585c0fddb8b253e7f))
 
-
-## v0.0.3 (2023-08-26)
-
-### Unknown
-
 * Update main.yml ([`9571743`](https://github.com/zoza2010/tweak_facecap_frontend/commit/957174332e8c762956bc53748aae2b5bacf237d4))
 
-
-## v0.0.2 (2023-08-26)
-
-### Unknown
-
 * Update main.yml ([`41c3765`](https://github.com/zoza2010/tweak_facecap_frontend/commit/41c376569ede06c51d7ab65c9bd5ad1202b3adb9))
-
-
-## v0.0.1 (2023-08-26)
-
-### Unknown
 
 * Update main.yml ([`f3571c2`](https://github.com/zoza2010/tweak_facecap_frontend/commit/f3571c2f83fafc9966f23494f89d9b570e5ecc3a))
 
